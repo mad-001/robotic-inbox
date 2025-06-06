@@ -2,7 +2,7 @@
     <append xpath="/blocks">
         <!-- *** Robotic Inboxes -->
         <block name="cntRoboticInbox">
-            <property name="CreativeMode" value="Player" />
+            <property name="CreativeMode" value="None" />
             <property name="Class" value="CompositeTileEntity" />
             <property class="CompositeFeatures">
                 <property class="TEFeatureStorage">
@@ -28,6 +28,9 @@
             <!-- placement -->
             <property name="Place" value="TowardsPlacerInverted" />
             <property name="AllowedRotations" value="All" />
+			
+			<!-- stack size -->
+			<property name="Stacknumber" value="1"/>
 
             <!-- trade -->
             <property name="SellableToTrader" value="false" />
@@ -322,7 +325,6 @@
         <!-- *** ROBOTIC_INBOX_VARIANT_HELPER -->
         <block name="cntRoboticInboxVariantHelper">
             <property name="Extends" value="cntRoboticInbox" />
-            <property name="CreativeMode" value="None" />
 
             <property name="CustomIcon" value="cntWasherClosed" />
             <property name="CustomIconTint" value="007fff" />
@@ -332,7 +334,7 @@
 
             <!-- trade -->
             <property name="TraderStageTemplate" value="electricTier1" />
-            <property name="EconomicValue" value="500" />
+            <property name="EconomicValue" value="50000" />
             <property name="SellableToTrader" value="true" />
 
             <!-- recipe -->
