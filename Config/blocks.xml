@@ -37,7 +37,11 @@
 
             <!-- salvage/repair -->
             <property name="MaxDamage" value="500" />
-            <drop event="Destroy" name="resourceScrapIron" count="1" />
+	    <drop event="Destroy" name="resourceScrapIron" count="4,8" />
+	    <drop event="Destroy" name="resourceMetalPipe" count="0,1" />
+	    <drop event="Destroy" name="resourceMechanicalParts" count="0,2" />
+	    <drop event="Destroy" name="resourceElectricParts" count="0,3" />
+	    <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
             <property class="RepairItems">
                 <property name="resourceForgedIron" value="1" />
                 <property name="resourceMechanicalParts" value="1" />
@@ -324,8 +328,8 @@
 
             <!-- trade -->
             <property name="TraderStageTemplate" value="electricTier1" />
-            <property name="EconomicValue" value="50000" />
-            <property name="SellableToTrader" value="false" />
+            <property name="EconomicValue" value="500" />
+            <property name="SellableToTrader" value="true" />
 			
 			<!-- stack size -->
 			<property name="Stacknumber" value="1"/>
